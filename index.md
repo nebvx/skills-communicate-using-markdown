@@ -1,6 +1,33 @@
 ## 1 When will Silksong come out?
 ### 1.1 What a red "No" does to a human
 Day 1197
+#### 1.1.2
+```c++
+#include <iostream>
+enum class News{
+    Yes,
+    Maybe,
+    Kinda,
+    No
+};
+
+std::string yipee(News n) {
+    if (n == News::No){
+        return "no yipee";
+    }
+    if (n == News::Maybe || n == News::Kinda){
+        return "yipee";
+    }
+    return "YIPEEE";
+}
+
+int main() {
+    News n = News::Yes;
+    std::string yipee(News n);
+    std::cout << yipee(n);
+    return 0;
+}
+```
 ### 1.2 Clowns
 Mostly used in context of games beeing released, but not Silksong. Sad.
 ## 2 Hornet
